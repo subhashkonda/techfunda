@@ -9,13 +9,16 @@
 		  border: 1px solid #96D4D4;
 		  border-radius: 10px;
 		}
+
 		td {
 		  border: 1px solid black;
+		  font-weight: bold;
 		}
 
 		th {
 			background-color: gray;
 		}
+
 		.header {
 		  padding: 5px 5px;
 		}
@@ -25,6 +28,44 @@
 		  float: right;
 		}
 
+		.logo {
+			width:250px; 
+			height:80px
+		}
+		
+		.caption {
+			widht:100%;
+			height: 50px;
+			background-color:green;
+			text-align: center;
+		}
+
+		.caption-content {
+			vertical-align: center;
+			margin-top: 10px; 
+			color: white; 
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.welcome-banner {
+			font-size: 35px; 
+			font-weight: bold;
+		}
+		
+		.blink {
+                animation: blinker 1.5s linear infinite;
+                color: red;
+                font-family: sans-serif;
+				font-weight: bold;
+				margin-top:10px;
+				text-align: center;
+            }
+		@keyframes blinker {
+			50% {
+				opacity: 0;
+			}
+		}
 	</style>
 </head>
 
@@ -32,7 +73,7 @@
   <div>
 
 	<div class="header">
-	  <a href="#default" ><img style ="width:250px; height:80px" src="./TechFunda.png"> </img></a>
+	  <a href="#default" ><img class ="logo" src="./TechFunda.png"> </img></a>
 	  <div class="header-right">
 		<address><sapn style="font-weight:bold">Phone:</sapn> 99635 00844</address> <br>
 	  <address><sapn style="font-weight:bold">Email:</sapn> <a href="mailto:webmaster@example.com">subhashkonda@gmail.com</a></address>
@@ -40,34 +81,260 @@
 	</div>
 
     <marquee direction="right" behavior="alternate" style="background-color:lightblue;">
-        <p style="font-size: 35px; font-weight: bold;"> Welcome to Tech Funda</p>
+        <p class="welcome-banner"> Welcome to Tech Funda</p>
     </marquee>
   
-    <h1> </h1>
+	<div class="blink">
+		<li> Interview reddiness</li> </br>
+		<li> 10 Mock Interviews from Tier-1 companiy professionals</li> </br>
+		<li> 9 Mentoring seesions from Industry Experts</li> </br>
+	</div>
+
+		
 	<table style="width:100%">
-		<caption style="widht:100%; height: 50px; background-color:green; text-align: center;">
-			<p style="vertical-align: center; margin-top: 10px; color:white; font-size: 25px; font-weight: bold;">Current Courses</p>
+		<caption class="caption">
+			<p class="caption-content">Current Courses</p>
 		</caption>
 
-		<tr style="width:50%">
-			<th>DATA STRUCTURES</th>
-			<th>SYSTEM DESIGN</th> 
+		<tr>
+			<th style="width:35%; font-size: 20px;">DATA STRUCTURES (6 Months)</th>
+			<th style="width:35%; font-size: 20px;">SYSTEM DESIGN  (3 Months)</th> 
 		</tr>
-		<tr style="width:50%">
-			<td>
+		<tr>
+			<td style="width:50%">
+			
 				<ul>
-				  <li>Topic 1</li>
-				  <li>Topic 2</li>
-				  <li>Topic 3</li>
-				</ul> 
-			</td>
-			<td>
+					<li>Recursion</li>
+					<ul>
+						<li>What is Recursion</li>
+						<li>Why is Recursion</li>
+						<li>Format of a Recursive function</li>
+						<li>Recursion and Memory</li>
+						<li>Recursion vs Iteration</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
 				<ul>
-				  <li>Topic 1</li>
-				  <li>Topic 2</li>
-				  <li>Topic 3</li>
-				</ul> 
+					<li>Backtracking</li>
+					<ul>
+						<li>Introduction</li>
+						<li>What is Backtracking</li>
+						<li>Advantages of Backtracking</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Searching</li>
+					<ul>
+						<li>Introduction</li>
+						<li>What is searching</li>
+						<li>Why do we need searching</li>
+						<li>Types of searching</li>
+						<li>Linear Search</li>
+						<li>Sorted Linear Search</li>
+						<li>Binary Search</li>
+						<li>String Searching</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>String Manipulations</li>
+					<ul>
+						<li>Introduction</li>
+						<li>String matching algorithm</li>
+						<li>Rabin-Krap algorithm</li>
+						<li>KMP algorithm</li>
+						<li>Boyer-Moore algorithm</li>
+						<li>Tires</li>
+						<li>Suffix Trees</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Sorting</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Various Sorting techniques</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Stacks</li>
+					<ul>
+						<li>What is Stack</li>
+						<li>How Stacks are used</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Queues</li>
+					<ul>
+						<li>What is Queues</li>
+						<li>How Queues are used</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Priority Queues</li>
+					<ul>
+						<li>What is PQ</li>
+						<li>Heaps</li>
+						<li>Binary Heaps</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Linked Lists</li>
+					<ul>
+						<li>What are linked lists</li>
+						<li>Why linked lists</li>
+						<li>Comarision of linked lists vs arrays</li>
+						<li>Single linked lists</li>
+						<li>Doubly linked lists</li>
+						<li>Circular linked lists</li>
+						<li>Skip lists</li>
+						<li>Memory efficient double linked lists</li>
+						<li>Unrolled linked lists</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Bit-Wise Programming</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Operators</li>
+						<li>Tips and Tricks</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Algorithm Techniques</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Classification</li>
+						<li>Classification by Implementation</li>
+						<li>Classification by Design</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Hashing</li>
+					<ul>
+						<li>What is Hashing</li>
+						<li>Why Hashing</li>
+						<li>Understanding Hashing</li>
+						<li>Components of Hashing</li>
+						<li>Hash Table</li>
+						<li>Hash function</li>
+						<li>Load factor</li>
+						<li>Collision</li>
+						<li>Collision resolution techiniques</li>
+						<li>Separate chaining</li>
+						<li>Open Addression</li>
+						<li>How hashing gets O(1) complexity</li>
+						<li>Problems can't fit for hash tables</li>
+						<li>Bloom Filters</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Greedy Technique</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Greedy Strategy</li>
+						<li>Elements of Greedy Algorithm</li>
+						<li>Does Greedy works always</li>
+						<li>Advantages of Greedy</li>
+						<li>Disadvantages of Greedy</li>
+						<li>Greedy Applications</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Divide and Conquer Technique</li>
+					<ul>
+						<li>Introduction</li>
+						<li>What is Divide and Conquer strategy</li>
+						<li>Does Divide and Conquer works always</li>
+						<li>Visualization of Divide and Conquer</li>
+						<li>Understanding Divide and Conquer</li>
+						<li>Master Theorem</li>
+						<li>Advantages of Divide and Conquer</li>
+						<li>Disadvantages of Divide and Conquer</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Dynamic Programming</li>
+					<ul>
+						<li>Introduction</li>
+						<li>What is DP</li>
+						<li>Properties of DP</li>
+						<li>Greedy vs Divide and Conquer vs DP</li>
+						<li>Does DP works always</li>
+						<li>DP Approaches</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Symbol Tables</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Symbol Table Implementation</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+					<li>Graphs</li>
+					<ul>
+						<li>Introduction</li>
+						<li>Graph Representation</li>
+						<li>Various Grapth Traverslas</li>
+						<li>Topological sort</li>
+						<li>Shortest path algorithm</li>
+						<li>Minimal Spanning tree</li>
+						<li>Live Problem solving</li>
+					</ul>
+				</ul>
+				
+				<ul>
+				<li>Trees</li>
+				<ul>
+				<li>Introduction</li>
+					<li>What is Binary Tree</li>
+					<li>Types of Binary Tree</li>
+					<li>Properties of Binary Tree</li>
+					<li>N-ary Trees (Generic)</li>
+					<li>Stack/Quele less traversals</li>
+					<li>Expression Trees</li>
+					<li>XOR Trees</li>
+					<li>Binary Search Trees (BSTs)</li>
+					<li>AVL Trees</li>
+					<li>Live Problem solving</li>
+				</ul>
+			</ul>
+					
 			</td>
+			
+			<td style="width:50%">
+				
+			</td>
+			
 		</tr>
 	</table>
   </div>
